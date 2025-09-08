@@ -6,7 +6,7 @@ import random
 class FeatureProcessor(BaseTransformer):
     """Crockford Base32 ID Generator
     Generates globally unique IDs using Crockford Base32 encoding.
-    Perfect for road segments and other entities requiring short, readable IDs.
+    Perfect for entities requiring short, readable IDs.
     """
     
     def __init__(self, id_length=12):
