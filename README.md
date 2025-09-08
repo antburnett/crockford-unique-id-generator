@@ -20,9 +20,9 @@ Both implementations use the Crockford Base32 alphabet (`123456789ABCDEFGHJKMNPQ
 
 ## Combination Examples
 
-- **4 characters**: 32^4 = 1,048,576 combinations
-- **12 characters**: 32^12 = 1.23 × 10^18 combinations
-- **32 characters**: 32^32 = 1.46 × 10^48 combinations
+- **4 characters**: 31^4 = 923,521 combinations
+- **12 characters**: 31^12 = 8.14 × 10^17 combinations
+- **32 characters**: 31^32 = 4.61 × 10^47 combinations
 
 ## Usage
 

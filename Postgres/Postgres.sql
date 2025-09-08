@@ -2,9 +2,9 @@ CREATE OR REPLACE FUNCTION fn_generate_crockford_id(size INT DEFAULT 12)
 RETURNS TEXT AS $$
 DECLARE
     -- Crockford Base32: excludes I, L, O, U, 0 for readability
-    -- 4 chars = 32^4 = 1,048,576 combinations
-    -- 12 chars = 32^12 = 1.23 x 10^18 combinations  
-    -- 32 chars = 32^32 = 1.46 x 10^48 combinations
+    -- 4 chars = 31^4 = 923,521 combinations
+    -- 12 chars = 31^12 = 8.14 x 10^17 combinations  
+    -- 32 chars = 31^32 = 4.61 x 10^47 combinations
     alphabet TEXT := '123456789ABCDEFGHJKMNPQRSTVWXYZ';
     result TEXT := '';
     i INT;
